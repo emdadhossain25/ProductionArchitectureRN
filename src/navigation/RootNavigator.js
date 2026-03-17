@@ -7,10 +7,10 @@ import { Loading } from '../components/feedback';
 
 /**
  * RootNavigator
- * 
+ *
  * Root-level navigation that decides which navigator to show
  * based on authentication state
- * 
+ *
  * Flow:
  * - isLoading → Show loading screen
  * - isAuthenticated → Show MainNavigator (tabs)
@@ -30,3 +30,9 @@ export default function RootNavigator() {
     </NavigationContainer>
   );
 }
+
+// Import at top: import linking from './linking';
+// Add to NavigationContainer: <NavigationContainer linking={linking}>
+
+// Import at top: import linking from './linking';
+// Add to NavigationContainer: <NavigationContainer linking={linking}>

@@ -1,6 +1,13 @@
 module.exports = {
   root: true,
-  extends: ['@react-native'],
+  extends: '@react-native',
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      presets: ['@react-native/babel-preset'],
+    },
+  },
   rules: {
     'react-native/no-inline-styles': 'warn',
     'no-console': 'warn',
